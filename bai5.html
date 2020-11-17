@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n = parseInt(prompt("nhap vao so luong N"));
+        var row = "";
+        for (var i = 1; i <= n; i++) {
+            for (var j = 1; j <= (n - i); j++) {
+                row += "&nbsp&nbsp;";
+            }
+            for (var k = 1; k <= i; k++) {
+                row += '*';
+            }
+            row += "<br/>"
+        }
+        document.write(row);
+    </script>
+</body>
+
+</html>
